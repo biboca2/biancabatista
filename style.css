@@ -1,0 +1,70 @@
+.eu {
+  width: 100%;
+  max-width: 400px;
+}
+
+.imagemEu {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.imagem p {
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: left;
+  border-color: black;
+  border-style: dotted;
+}
+
+/*ul, ol{
+  list-style-type: none;
+  
+}*/
+
+.informacoes {
+  flex: 1 1 300px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.informacoes p {
+  margin-top: -05px;
+
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .informacoes {
+    font-size: 0.95rem;
+  }
+
+  .imagemEu {
+    flex-direction: column;
+  }
+
+  .listaSobreMim {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
